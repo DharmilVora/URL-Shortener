@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <div id="firstdiv">
+        <div id="seconddiv">
+            <div id="thirddiv">URL Shortener</div>
+            <div id="fourthdiv">Enter URL:</div>
+            <div id="fdiv"><input id="fifthdiv" type="text" name="defaulturl"></div>
+            <div id="sixthdiv">Custom Short URL (Optional):</div>
+            <div id="sdiv"><input id="ssdiv" type="text" name="customurl"></div>
+            <div id="btnn"><button id="bn">Shorten</button></div>
+            <div id="txt">
+                Shortened URL:
+                <a href="" id="yu" target="/"></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById("bn");
+        btn.addEventListener("click", async (e) => {
+            e.preventDefault();
+            const original = document.getElementById("fifthdiv").value;
+            const short = document.getElementById("ssdiv").value;
+            const res = await fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: `defaulturl=${encodeURIComponent(original)}&customurl=${encodeURIComponent(short)}`
+            });
+
+            const data = await res.json();
+            if (data.zx) {
+                const link = document.getElementById("yu");
+                link.href = data.zx;
+                link.innerText = data.zx;
+            }
+        });
+    </script>
+</body>
+</html>

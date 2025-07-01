@@ -1,0 +1,86 @@
+*{
+   background-color: rgb(241, 238, 238);
+}
+#firstdiv{
+    padding-top: 30px;
+    align-items: center;
+    justify-items: center;
+}
+#seconddiv{
+    background-color: whitesmoke;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+#thirddiv{
+    color: rgba(0, 0, 0, 0.552);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: xx-large;
+    background-color: whitesmoke;
+    padding-left: 130px;
+}
+#fourthdiv{
+    background-color: whitesmoke;
+    padding-top: 28px;
+    padding-left: 35px;  
+}
+#fdiv{
+    background:none;
+    padding-left: 35px;
+    padding-top: 15px;
+}
+#sdiv{
+    background:none;
+    padding-left: 35px;
+    padding-top: 15px;
+}
+#sixthdiv{
+    background:none;
+    padding-left: 35px;
+    padding-top: 15px;
+}
+#fifthdiv{
+    background: none;
+    border-color: rgb(202, 200, 200);
+    padding-left: 35px;
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+}
+#ssdiv{
+    background: none;
+    border-color: rgb(202, 200, 200);
+    padding-left: 35px;
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+}
+#btnn{
+    background:none;
+    padding-top: 30px;
+    padding-left: 210px;
+
+}
+#bn{
+    color: white;
+    background-color: rgb(40, 40, 192);
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+}
+#txt{
+    background:none;
+    color: rgba(0, 0, 0, 0.552);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size: large;
+    padding-left: 180px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+#ss{
+    padding-top:20px;
+    background: none;
+}
